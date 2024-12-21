@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //작품노트펼치기 클릭
     document.querySelector('.artnote_open_btn').addEventListener('click', () => {
         if (currentPoint) {
-            const notePage = `Asset/Notes_Art/noteA${currentPoint.replace('p', '')}.html`;
+            const notePage = `Notes_Art/noteA${currentPoint.replace('p', '')}.html`;
             window.location.href = notePage;
         }
     });
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //상품노트펼치기 클릭
     document.querySelector('.prodnote_open_btn').addEventListener('click', () => {
         if (currentPoint) {
-            const notePage = `Asset/Notes_Prod/noteP${currentPoint.replace('p', '')}.html`;
+            const notePage = `Notes_Prod/noteP${currentPoint.replace('p', '')}.html`;
             window.location.href = notePage;
         }
     });
