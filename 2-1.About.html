@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="/Design.css?v=1.0">
-    <link rel="stylesheet" href="/Asset/2-1.About.css">
+    <link rel="stylesheet" href="Design.css?v=1.0">
+    <link rel="stylesheet" href="Asset/2-1.About.css">
 </head>
 
 <body>
     <div id="navbar-placeholder"></div>
     <script> /*Nav Bar*/
-        fetch('/navbar.html')
+        fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
 
                 const script = document.createElement('script');
-                script.src = '/text.js';
+                script.src = 'text.js';
                 document.body.appendChild(script);
             })
             .catch(error => console.error('Error loading navbar:', error));
@@ -29,10 +29,10 @@
         <div class="num">2024 #002</div>
         <div class="text" data-key = "about_exhibit"></div>
         <div class="photos">
-            <img src="/Asset/Images/2024_1_Photos/1.png" alt="P1">
+            <img src="Asset/Images/2024_1_Photos/1.png" alt="P1">
         </div>
 
-        <script src="/Asset/2-1.About.js"></script>
+        <script src="Asset/2-1.About.js"></script>
     </div>
 
     <button class="scroll-to-top" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
