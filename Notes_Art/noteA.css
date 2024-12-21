@@ -1,0 +1,23 @@
+.cover-note-btn {
+    position: absolute;
+    top: 5.5rem;
+    left: 15%;
+    z-index: 1;
+    white-space: nowrap;
+    background: #E6E6E6;
+    border-radius: 30px;
+    padding: 0 90px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .cover-note-btn{
+        left: 5%;
+        padding: 0 45px;
+    }
+}

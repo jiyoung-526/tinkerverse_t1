@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artnote_1</title>
+    <link rel="stylesheet" href="/Design.css?v=1.0">
+    <link rel="stylesheet" href="noteA.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+
+                const script = document.createElement('script');
+                script.src = '/text.js';
+                document.body.appendChild(script);
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+
+    <!-- 노트 덮기 버튼 -->
+    <button class="cover-note-btn" onclick="goBackToPreviousPopup()">작업 노트 덮기</button>
+    <script>
+        function goBackToPreviousPopup() {window.history.back();}
+    </script>
+
+    <!--작품/상품 결과물 보기 버튼-->
+    
+</body>
+</html>
