@@ -1,4 +1,3 @@
-//points
 const illust = document.querySelector('.illust');
 const points = document.querySelectorAll('.point');
 const pointPositions = {
@@ -24,7 +23,7 @@ function updatePoints() {
         const position = pointPositions[id];
 
         if (position) {
-            // 상대적 위치, illus 기준으로 계산
+            // 상대 위치, illus 기준으로 계산
             point.style.top = `${illustRect.top + (illustRect.height * position.top) / 100}px`;
             point.style.left = `${illustRect.left + (illustRect.width * position.left) / 100}px`;
         }
